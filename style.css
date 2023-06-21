@@ -7,7 +7,8 @@
 --FingerPaint-font: 'Finger Paint', cursive;
 --Hammersmith-font: 'Hammersmith One', sans-serif;
 --Montserrat-font: 'Montserrat', sans-serif;
---fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);
+/* --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem); */
+--fs-xl: clamp(3.5rem, 12vw + 1rem, 5rem);
 --fs-600: 2rem;
 --fs-400: 1rem;
 }
@@ -45,18 +46,10 @@ body{
 }
 .swiper {
     width: 100%;
-    /* max-height: 600px; */
-    height: 100%;
-    /* position: relative; */
+    height: 100%; 
   }
  
-/* .swiper-slide img{
-    width: 100%;
-    max-height: 700px;
-    object-fit: cover;
-    z-index: -1;
-    
-} */
+
 .slider-image{
     position: absolute;
     z-index: -1;
@@ -75,26 +68,27 @@ body{
     min-height: 700px;
 }
 .hero-content{
-    /* position:absolute; */
     display: flex;
     justify-content: center;
     max-width: 520px;
     
 }
+ 
 a { color: var(--black-light-color); }
 a:hover { color: var(--black-light-color-highlight); }
 
 .hero-content-text h2{
-    font-size: 3rem;
-    font-weight: 600;
+    font-size:var(--fs-xl);
+    font-weight: 800;
     color: white;
+    font-family: var(--Montserrat-font);
 }
 h1{
     font-size: var(--fs-xl);
 }
 p{
     font-size: var(--fs-00);
-    
+    letter-spacing: 1px;
 }
  
 h2,h3,h4{
