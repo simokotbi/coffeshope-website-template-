@@ -1,5 +1,5 @@
 :root{
---primary-color:#9E7540
+--primary-color:#9E7540;
 --secondary-color: #FBF1CA;
 --gray-color:#B0ACAC;
 --black-light-color: #0a1118;
@@ -7,8 +7,17 @@
 --FingerPaint-font: 'Finger Paint', cursive;
 --Hammersmith-font: 'Hammersmith One', sans-serif;
 --Montserrat-font: 'Montserrat', sans-serif;
+--fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);
+--fs-600: 2rem;
+--fs-400: 1rem;
 }
 
+@media (min-width: 40em) {
+:root {
+  --fs-600: 3rem;
+  --fs-400: 1.125rem;
+}
+}
 
 *{
     box-sizing: border-box;
@@ -18,7 +27,7 @@
 }
 body{
     background-color: var(--secondary-color);
-    font-size: 16px;
+    font-size: var(--fs-400);
     font-family: var(--Hammersmith-font);
 }
 .header{
@@ -26,12 +35,83 @@ body{
     z-index: 10;
 }
 .hero{
-    position: relative;
-    background: url('assets/images/carousel-1.jpg')no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    min-height: 600px;
+    background: url("assets/images/carousel-1.jpg")none;
+}
+.hero-content-text{
+   
+    max-width: 540px;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+.swiper {
+    width: 100%;
+    /* max-height: 600px; */
     height: 100%;
+    /* position: relative; */
+  }
+ 
+/* .swiper-slide img{
+    width: 100%;
+    max-height: 700px;
+    object-fit: cover;
+    z-index: -1;
+    
+} */
+.slider-image{
+    position: absolute;
+    z-index: -1;
+   
+}
+.swiper-slide img{
+    width: 100%;
+    min-height: 700px;
+    height: 100%;
+   background-repeat: no-repeat;
+}
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 700px;
+}
+.hero-content{
+    /* position:absolute; */
+    display: flex;
+    justify-content: center;
+    max-width: 520px;
+    
 }
 a { color: var(--black-light-color); }
 a:hover { color: var(--black-light-color-highlight); }
+
+.hero-content-text h2{
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+}
+h1{
+    font-size: var(--fs-xl);
+}
+p{
+    font-size: var(--fs-00);
+    
+}
+ 
+h2,h3,h4{
+    color: var(--black-light-color);
+    font-size: var(--fs-600);
+    font-weight: 400;
+}
+
+.btn-lg-primary{
+    background-color: var(--primary-color)!important;
+    color: white;
+    padding: 1em 2em;
+    border: 1px solid #9b805d;
+}
+.btn-lg-secondary{
+    background-color:white!important;
+    color: var(--black-light-color);
+    padding: 1em 2em;
+    border: 1px solid #9b805d;
+}
