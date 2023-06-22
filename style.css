@@ -128,7 +128,7 @@ position: relative;
 .section-title-overlay{
     font-size: var(--fs-xl);
     font-weight: 600;
-    position: absolute;
+    position: absolute; 
     bottom: 40%;
     left: 15%;
     opacity: .2;
