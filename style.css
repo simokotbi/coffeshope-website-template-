@@ -1,3 +1,16 @@
+/* CSS HEX
+--raisin-black: #242331ff;
+--caf-noir: #533e2dff;
+--golden-brown: #a27035ff;
+--lion: #b88b4aff;
+--citron: #ddca7dff; 
+background:#FDFCDC
+also this 
+--jet: #2f2f2fff;
+--chamoisee: #9e7540ff;
+
+--light-yellow: #fdfcdcff;
+*/
 :root{
 --primary-color:#9E7540;
 --secondary-color: #FBF1CA;
@@ -30,7 +43,8 @@
 
 }
 body{
-    background-color: var(--secondary-color);
+    background-color:#fdfcdcff;
+     /* var(--secondary-color); */
     font-size: var(--fs-400);
     font-family: var(--Hammersmith-font);
     color: var(--black-light-color-2);
