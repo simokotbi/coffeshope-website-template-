@@ -141,6 +141,11 @@ position: relative;
     opacity: .2;
     z-index: -1;
 }
+@media (min-width: 40em) {
+    .section-title-overlay {
+        bottom: 5px;
+        
+    }
 .product-desc{
     display: flex;
     flex-direction: column;
