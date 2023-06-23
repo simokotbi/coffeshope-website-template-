@@ -90,16 +90,23 @@ a:hover { color: var(--black-light-color-highlight); }
     color: white;
     font-family: var(--Montserrat-font);
 }
+h1,h2,h3,h4,h5{
+    text-wrap:balance;
+}
 h1{
     font-size: var(--fs-lg);
 }
 p{
-    font-size: 1.3rem;
+    font-size: 1rem;
     /* letter-spacing: 1px; */
     line-height: 1.7;
     color:var(--black-light-color);
 }
- 
+.product-desc span{
+    color: var(--primary-color);
+    font-weight:600;
+    font-size: var(--fs-500);
+ }
 h3{
     font-size: var(--fs-600);
     font-weight: 800;
@@ -133,4 +140,10 @@ position: relative;
     left: 15%;
     opacity: .2;
     z-index: -1;
+}
+.product-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-wrap:balance;
 }
